@@ -1,0 +1,16 @@
+h1 {
+    color: lightgreen;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: solid;
+    border-radius: 60px;
+    border-width: 20px;
+    border-spacing: 40px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+p {
+    font-family: arial;
+}

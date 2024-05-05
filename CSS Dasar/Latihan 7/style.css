@@ -1,0 +1,11 @@
+.hello {
+    color:forestgreen;
+}
+
+ul.link li a:hover {
+    color: fuchsia;
+}
+
+ul.link li a.favorit:hover {
+    color: gold;
+}

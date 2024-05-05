@@ -1,0 +1,44 @@
+body {
+    height: 2000px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.satu {
+    background-color: aquamarine;
+}
+
+/*Absolute (relatif parent)*/
+
+/* .dua {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+/*Fixed (relatif window)*/
+
+.dua {
+    background-color: green;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.tiga {
+    background-color: yellow;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: 10px solid red;
+    position: relative;
+}

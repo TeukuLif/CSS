@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+
+}
+
+/* grid-template-columns: <track-size> ... | <line-name> <track-size> ...;
+grid-template-rows: <track-size> ... | <line-name> <track-size> ...; */
+/* <track-size>: bisa berupa px, %, auto, atau, fr (fraction)
+<line-name>: nama yang bisa diberikan pada track*/
+/* Explicit grid: kita tentukan ukurannya
+Implicit grid: kolom dan garis yang tidak kita tentukan ukurannya (sisa) */
+/* grid-auto-columns dan grid-auto-rows: untuk mengatur ukuran grid track 
+yang tidak dituliskan pada grid-template (implicit) */
+/* auto flow: untuk mengatur penempatan item/cell pada grid track, termasuk
+yang ditulis secara implicit (row, column, row dense, column dense) */
+/* repat (): untuk memberikan grid track secara berulang */
+/* min and max-content: menentukan ukuran grid track berdasar content pada sbeuah item 
+(untuk min-content ukuran grid track akan ditentukan beradasarkan ukuran kata/konten terpanjang) */
+/* auto-fill and auto-fit: menentukan jumlah item pada grid track (auto-fill akan meemberikan ruang untuk
+grid track secara explicit apabila terdapat ruang, walaupun tidak ada item; auto-fit akan menutup explicit
+grid track pada item terakhir */
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    /* grid-template-columns: repeat(7, 3fr) repeat(2, 1.5fr); */
+    /* grid-template-columns: 1fr min-content 1fr; */
+    /* grid-template-columns: repeat(auto-fill, 100px); */
+    grid-template-columns: 1fr minmax(200px, 300px) 1fr;
+}
+
+.item {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: salmon;
+}

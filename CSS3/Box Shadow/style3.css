@@ -1,0 +1,33 @@
+div {
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    margin: 50px auto;
+    box-shadow: 0px 30px 10px -20px rgba(000, 000, 000, 0.7)
+        /*inset(bayangan ke dalam; optional) x-offset y-offset blur spread rgba*/
+    ;
+    transition: .3s;
+}
+
+div:hover {
+    box-shadow: 0px 80px 10px -40px rgba(000, 000, 000, 0);
+    margin-top: 40px;
+}
+
+/* div:hover {
+    box-shadow: 0px 0px 0px 10px lightgreen,
+        0 0 0 15px lightskyblue;
+    color: white;
+}
+
+/*multiple shadow*/
+/* div { */
+/* width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: salmon;
+    box-shadow: 0px 80px 10px -40px rgba(000, 000, 000, 0);
+    text-align: center;
+    line-height: 300px;
+    font-size: 40px;
+    color: salmon; */

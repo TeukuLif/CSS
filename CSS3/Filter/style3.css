@@ -1,0 +1,29 @@
+/* Filter:
+blur(px)
+brightness(angka | %)
+contrast(angka | %)
+saturate(angka | %)
+grayscale(angka | %)
+sepia(angka | %)
+hue-rotate(deg)
+invert(angka | %)
+opacity(angka | %)
+drop-shadow(sama seperti box-shadow; dapat berfungsi untuk box dan teks sekaligus; akan memberikan bayangan terhadap objek tidak transparan)
+*/
+
+body {
+    text-align: center;
+}
+
+img {
+    /*-webkit-filter:*/
+    /*chrome sudah support*/
+    filter: drop-shadow(0px 30px 10px rgba(000, 000, 000, 0.7)) blur(5px) grayscale(100);
+    margin: 50px auto;
+    transition: .3s;
+}
+
+img:hover {
+    filter: drop-shadow(0px 80px 10px rgba(000, 000, 000, 0));
+    margin-top: 40px;
+}

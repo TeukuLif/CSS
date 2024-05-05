@@ -1,0 +1,11 @@
+div {
+    width: 200px;
+    background-color: aquamarine;
+    margin: 20px auto;
+    padding: 50px;
+    border-top: 5px solid black;
+    border-right: 5px dotted black;
+    border-left: 5px dashed black;
+    border-bottom: 5px double black;
+    box-sizing: border-box;
+}

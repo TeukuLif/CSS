@@ -1,0 +1,23 @@
+/* Belajar Mengenai Text Styling */
+
+p {
+    text-align: justify;
+    color: #7D5A50;
+    text-indent: 50px;
+    text-transform: capitalize;
+    border:chocolate;
+    border-style: solid;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    padding:10px;
+}
+
+h1 {
+    color: burlywood;
+    border: chocolate;
+    border-style: solid;
+    border-radius: 100px;
+    text-align: center;
+    margin-right: 500px;
+    margin-left: 500px;
+}

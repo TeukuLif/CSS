@@ -1,0 +1,11 @@
+div {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background: radial-gradient(circle farthest-side at top left, red, black);
+    transition: .5s;
+}
+
+div:hover {
+    background: radial-gradient(circle farthest-side at bottom right, red, black);
+}

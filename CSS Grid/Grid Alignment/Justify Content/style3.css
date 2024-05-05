@@ -1,0 +1,50 @@
+/* justify-content: mengatur seluruh grid container pada sumbu horizontal; bisa dilakukan ketika
+ukuran total grid lebih kecil dari ukuran containernya, biasanya ketika grid itemsnya menggunakan
+ukuran yang fixed (px); start, end, center, stretch, space-around, space-between, space-evenly*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 80px 80px 80px;
+    grid-template-columns: 120px 180px 120px;
+    gap: 5px;
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: stretch; */
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+}
+
+.items {
+    border: 3px solid black;
+    height: 50px;
+    width: 100px;
+    background-color: lightblue;
+    justify-content: end;
+}
+
+/* .items.i1,
+.items.i4,
+.items.i7 {
+    width: 130px;
+}
+
+.items.i2,
+.items.i5,
+.items.i8 {
+    width: 80px;
+}
+
+.items.i3,
+.items.i6,
+.items.i9 {
+    width: 170px;
+} */

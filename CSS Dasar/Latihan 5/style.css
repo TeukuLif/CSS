@@ -1,0 +1,36 @@
+.ul1 li a {
+    color:brown;
+    text-decoration: none;
+}
+
+.ul2 li a {
+    color: crimson;
+    text-decoration: none;
+}
+
+.a1 {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.h {
+    color: darkgoldenrod;
+}
+
+p {
+    text-align: justify;
+    font: italic;
+}
+
+.p1 {
+    color: brown;
+}
+
+.p2 {
+    color: crimson;
+}

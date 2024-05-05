@@ -1,0 +1,30 @@
+/* Fungsi Transformasi:
+scale (memperbesar/memperkecil) (angka), scaleX (angka), scaleY (angka)
+rotate (memutar) (deg), rotateX (deg), rotateY (deg)
+skew (membuat condong/miring) (deg), skewX (deg), skewY (deg)
+translate (mengubah posisi) (px), translateX (px), translateY (px) */
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    margin: 50px auto 0;
+    transition: 1s;
+    /* font-size: 20px;
+    color: salmon;
+    text-align: center; */
+    /* line-height: 225px; */
+}
+
+div:hover {
+    /* transform: scale(3, 3); */
+    /* transform: rotate(180deg) rotateX(180deg) rotateY(180deg); */
+    /* color: white; */
+    /* transform: skewX(45deg) skewY(45deg); */
+    transform: translate(0px, 100px) scale(3) rotate(360deg);
+}

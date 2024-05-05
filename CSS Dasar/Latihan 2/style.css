@@ -1,0 +1,10 @@
+h1 {
+    font-family: arial, Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100px;
+    font-weight:lighter;
+    font-variant: small-caps;
+}
+
+p {
+    font-family: Verdana, Tahoma, sans-serif;
+}

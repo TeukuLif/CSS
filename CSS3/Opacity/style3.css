@@ -1,0 +1,30 @@
+body {
+    height: 2000px;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.satu {
+    background-color: black;
+    position: fixed;
+    /* top: 100px;
+    right: 100px;
+    left: 100px;
+    bottom: 100px; */
+    opacity: .7;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 20%;
+}
+
+.dua {
+    background-color: aqua;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
+    opacity: .5;
+    /*tidak bisa tidak transparan kalau parentnya transparan*/
+}

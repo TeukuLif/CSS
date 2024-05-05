@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+
+img {
+    -webkit-filter: grayscale(100%)
+        /*chrome sudah support*/
+    ;
+    filter: grayscale(100%);
+}
+
+/* website rujukan prefix: shouldiprefix.com, caniuse.com, pleeease.io/play*/

@@ -1,0 +1,11 @@
+div {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    /* background: linear-gradient(45deg, salmon, yellow, lightskyblue) */
+    /*memakai sudut*/
+    ;
+    background: linear-gradient(to top right, green 63%, yellow 80%)
+        /*memakai arah*/
+    ;
+}

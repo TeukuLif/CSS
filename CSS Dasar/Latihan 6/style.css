@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+}
+
+ul li a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.hello {
+    text-decoration: none;
+    text-align: center;
+}
+
+.hello:link {
+    color: seagreen;
+}
+
+.hello:hover {
+    color: gold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.hello:active {
+    font-style: italic;
+    color: tan;
+}
+
+.hello:visited {
+    color: red;
+}
+
+li:first-child a {
+    color: yellow;
+}
+
+li:nth-child(n+2) a{
+    color: gray;
+}
+
+li:nth-child(even) a:hover {
+    color: cyan;
+}
+
+li:last-child a {
+    color: pink;
+}
+
+p:first-child:hover {
+    color: darkmagenta;
+    font-style: italic;
+}
+
+p:nth-child(even):hover {
+    color: red;
+    font-style: italic;
+}
+
+p:last-child:hover {
+    color: forestgreen;
+    font-style: italic;
+}

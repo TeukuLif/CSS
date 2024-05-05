@@ -1,0 +1,37 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+
+}
+
+/* grid-template-columns: <track-size> ... | <line-name> <track-size> ...;
+grid-template-rows: <track-size> ... | <line-name> <track-size> ...; */
+/* <track-size>: bisa berupa px, %, auto, atau, fr (fraction)
+<line-name>: nama yang bisa diberikan pada track*/
+/* Explicit grid: kita tentukan ukurannya
+Implicit grid: kolom dan garis yang tidak kita tentukan ukurannya (sisa) */
+/* grid-auto-columns dan grid-auto-rows: untuk mengatur ukuran grid track 
+yang tidak dituliskan pada grid-template (implicit) */
+/* auto flow: untuk mengatur penempatan item/cell pada grid track, termasuk
+yang ditulis secara implicit (row, column, row dense, column dense) */
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: [awal] 100px [kolom2] 50px [kolom3] auto [akhir];
+    grid-template-rows: [baris-awal] 50px [b2] 40px [b3] auto [baris-akhir];
+}
+
+.item {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: salmon;
+}

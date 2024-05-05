@@ -1,0 +1,33 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+
+}
+
+/* grid-template-columns: <track-size> ... | <line-name> <track-size> ...;
+grid-template-rows: <track-size> ... | <line-name> <track-size> ...; */
+/* <track-size>: bisa berupa px, %, auto, atau, fr (fraction)
+<line-name>: nama yang bisa diberikan pada track*/
+/* Explicit grid: kita tentukan ukurannya
+Implicit grid: kolom dan garis yang tidak kita tentukan ukurannya (sisa) */
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 100px 30% auto;
+    grid-template-rows: 30% 100px 500px;
+}
+
+.item {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: salmon;
+}

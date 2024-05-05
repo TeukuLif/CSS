@@ -1,0 +1,60 @@
+/* grid-column-start & grid-column-end, grid-row-start & grid-row-end: menentukan tempat dari grid
+item dengan mengacu pada nomor atau nama grid line yang spesifik 
+contoh penulisan: 
+<nomor> | <nama> | span <nomor> | span <nama> | auto 
+<nomor> | <nama>: mengacu pada nomor atau nama yang kita beri pada grid line
+span <nomor>: item akan memanjang / melebar sampai sejumlah nomor
+span <nama>: item akan memanjang / melebar sampai ke nama grid line tertentu
+
+grid-column & grid-row: shorthand untuk start dan end pada grid-column dan grid-row
+cara penulisan:
+<start-line> / <end-line> | <start-line> / span <value>
+
+grid-area: menentukan nama area pada item sesuai dengan template yang sudah dibuat seblumnya
+melalui properti grid-template-areas; dapat digunakan juga sebagai shorthand untuk grid-column-start,
+gridu-column-end, grid-row-start, dan grid-row-end
+cara penulisan:
+<nama> | <row-start> / <column-start> / <row-end> / <column-end> */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas:
+        'header header header'
+        'sidebar content content'
+        'footer footer footer';
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: seagreen;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: saddlebrown;
+}
+
+.content {
+    grid-area: content;
+    background-color: slateblue;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: salmon;
+}
